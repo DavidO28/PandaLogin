@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(42, 134, 255, 0.993);
+    display: flex;
+    justify-content: center;
+}
+
+.panda-login-box {
+    position: relative;
+    width: 300px;
+}
+
+.eyes {
+    top: 120px;
+    left: 105px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.pupil {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: #000;
+}
+
+.panda-body {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.leg {
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    width: 70px;
+    height: 70px;
+}
+
+.left-leg {
+    left: 0;
+}
+
+.right-leg {
+    right: 0;
+}
+
+.hand {
+    top: 300px;
+    position: absolute;
+    z-index: 99;
+    width: 70px;
+    height: 70px;
+    transition: 0.4s;
+}
+
+.hands-up {
+    top: 200px !important;
+}
+
+.left-hand {
+    left: -30px;
+}
+
+.right-hand {
+    right: -30px;
+}
+
+.login-form {
+    position: absolute;
+    z-index: 98;
+    top: 240px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.upwards {
+    top: 140px !important;
+}
+
+.login-form h1 {
+    font-family: cursive;
+    font-style: italic;
+}
+
+.login-form>* {
+    margin: 15px 5px;
+}
+
+.user-box {
+    position: relative;
+}
+
+.user-box input {
+    padding: 10px 25px 10px 10px;
+    font-size: 16px;
+    margin-bottom: 40px;
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.user-box label {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 10px 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.user-box input:focus~label,
+.user-box input:valid~label {
+    top: -25px;
+    left: 0;
+    font-size: 12px;
+}
+
+.user-box input:focus,
+.user-box input:valid {
+    border-bottom: 1px solid rgba(42, 134, 255, 0.993);
+}
+
+.view-hide {
+    visibility: hidden;
+    top: 8px;
+    right: -20px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.login-form button {
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    border: 1px solid transparent;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid rgba(42, 134, 255, 0.993);
+    box-shadow: 0 50px rgba(42, 134, 255, 0.993) inset;
+    color: black;
+    font-weight: bold;
+}
+
+.login-form button:hover {
+    box-shadow: 0 0 transparent inset;
+}

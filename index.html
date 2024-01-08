@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="panda-login-box">
+        <img class="panda-body" src="./images/head&body.svg">
+        <img class="leg left-leg" src="./images/leg.svg">
+        <img class="leg right-leg" src="./images/leg.svg">
+        <img class="hand left-hand" src="./images/hand.svg">
+        <img class="hand right-hand" src="./images/hand.svg">
+        <div class="eyes">
+            <div class="eye">
+                <div class="pupil"></div>
+            </div>
+            <div class="eye">
+                <div class="pupil"></div>
+            </div>
+        </div>
+
+        <form class="login-form" action="#" method="post">
+            <h1>Panda Login</h1>
+            <div class="user-box">
+                <input type="text" name="username" required id="username">
+                <label for="username">Username</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="password" required id="password">
+                <label for="password">Password</label>
+                <img class="view-hide" id="togglePassword" src="./images/view.png">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
